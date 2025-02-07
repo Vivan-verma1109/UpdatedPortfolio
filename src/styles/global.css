@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+  
+  /* Scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Link styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Utility classes */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .section {
+    padding: 4rem 0;
+  }
