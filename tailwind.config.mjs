@@ -8,12 +8,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--background)", 
+        foreground: "var(--foreground)", 
+        red: {
+          500: "#f56565",
+        },
       },
-      // Enable smooth scrolling behavior
-      scrollBehavior: {
-        DEFAULT: 'smooth',
+      fontFamily: {
+        sans: ["Inter", "sans-serif"], 
       },
     },
   },
