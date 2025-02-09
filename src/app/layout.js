@@ -1,4 +1,4 @@
-import Navbar from "/Users/vivanverma/Documents/Portfolio/vivanverma-portfolio/src/components/navbar.js";
+import Navbar from "/Users/vivanverma/Documents/Port/UpdatedPortfolio/src/components/navbar.js";
 
 export default function RootLayout({ children }) {
   return (

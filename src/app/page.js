@@ -1,10 +1,10 @@
 import styles from './page.module.css';
-import "/Users/vivanverma/Documents/Portfolio/vivanverma-portfolio/src/styles/global.css"
+import "/Users/vivanverma/Documents/Port/UpdatedPortfolio/src/styles/global.css"
 
 export default function Page() {
   return (
     <main className={styles.main}>
-      {/* Home  */}
+      {/* Home */}
       <section id="home" className={styles.home}>
         <h1 className={styles.homeTitle}>
           Hello, I’m <span className={styles.homeHighlight}>Vivan.</span>
