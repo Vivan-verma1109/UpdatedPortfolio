@@ -1,14 +1,23 @@
 :root {
-    --background: #1a202c;
-    --foreground: #ffffff;
-  }
-  
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: var(--background);
-    color: var(--foreground);
-  }
-  
+  --background: #1a202c;
+  --foreground: #ffffff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
