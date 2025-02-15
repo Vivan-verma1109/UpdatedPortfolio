@@ -1,16 +1,27 @@
+"use client";
+import { useRef } from "react";
 import AboutMe from "../components/AboutMe/about.js";
 import Projects from "../components/Projects/projects.js";
 import Contacts from "../components/Contacts/contacts.js";
+import styles from "./page.module.css";
 
 export default function Page() {
+  const projectsRef = useRef(null);
+
+  const handleScroll = () => {
+    projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-      {/* Hero Section */}
-      <section id="home" style={{ minHeight: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <div style={{ textAlign: "center", color: "var(--foreground)" }}>
-          <h1>Hello, I'm <span style={{ color: "#f56565" }}>Vivan</span>.</h1>
-          <h2>I'm a full-stack web developer.</h2>
-          <button style={{ marginTop: "20px", padding: "10px 20px", fontSize: "1.2rem", backgroundColor: "#f56565", color: "white", border: "none", borderRadius: "5px", cursor: "pointer" }}>
+      {/* Home Section */}
+      <section className={styles.home}>
+        <div className={styles.section}>
+          <h1 className={styles.homeTitle}>
+            Hello, I'm <span className={styles.homeHighlight}>Vivan</span>.
+          </h1>
+          <h2 className={styles.homeDescription}>I'm a full-stack web developer.</h2>
+          <button className={styles.learnMoreButton} onClick={handleScroll}>
             View my work ↓
           </button>
         </div>
@@ -22,7 +33,7 @@ export default function Page() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects">
+      <section id="projects" ref={projectsRef}>
         <Projects />
       </section>
 

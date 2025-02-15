@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar/navbar";
-import "/Users/vivanverma/Documents/Port/UpdatedPortfolio/src/styles/global.css";
+import "../styles/global.css";
+
 
 export const metadata = {
   title: "Vivan Verma",
